@@ -1,7 +1,7 @@
-<div id="home-view" data-ng-controller="HomeController as home">
+<div id="home-view">
   <div id="home-tiles" class="row">
     <div class="col-md-4">
-      <a href="#" data-ng-click="$dc.loadMenuItems('menu');">
+      <a href="#" onclick="$dc.loadMenuItems('menu');">
         <div class="tile">
           <div class="tile-image">
             <span class="glyphicon glyphicon-th-list"></span>
@@ -14,7 +14,7 @@
       </a>
     </div>
     <div class="col-md-4">
-      <a href="#" data-ng-click="$dc.loadMenuItems(home.randomCategoryShortName);">
+      <a href="#" onclick="$dc.loadMenuItems({{randomCategoryShortName}});">
         <div class="tile">
           <div class="tile-image">
             <span class="glyphicon glyphicon-star"></span>
@@ -27,7 +27,7 @@
       </a>
     </div>
     <div class="col-md-4">
-      <a href="#" data-ng-click="$dc.loadMap();">
+      <a href="#" onclick="$dc.loadMap();">
         <div class="tile">
           <div class="tile-image">
             <span class="glyphicon glyphicon-map-marker"></span>
